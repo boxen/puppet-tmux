@@ -6,5 +6,7 @@
 class tmux {
   include homebrew
 
-  package { 'tmux': }
+  package { 'tmux':
+    install_options => ['--nop']
+  }
 }
